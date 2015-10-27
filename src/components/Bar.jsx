@@ -8,7 +8,6 @@ export default class Bar extends React.Component{
     this.decreaseValue = this.decreaseValue.bind(this)
   }
   increaseValue() {
-    console.log('inc', this.state.value);
     this.setState({value: this.state.value + this.props.step});
   }
   decreaseValue() {
