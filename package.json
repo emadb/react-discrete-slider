@@ -4,7 +4,7 @@
   "description": "A simple slider made with React",
   "scripts": {
     "dev": "webpack-dev-server --hot --inline --devtool eval-source --progress --colors",
-    "build": "webpack --progress --profile --colors"
+    "build": "webpack --config webpack-prod.config.js  --progress --profile --colors"
   },
   "repository": {
     "type": "git",
