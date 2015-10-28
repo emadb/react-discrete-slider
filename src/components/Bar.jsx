@@ -16,10 +16,6 @@ export default class Bar extends React.Component{
   render() {
     let roundedValue = Math.round(this.state.value * 10) / 10;
 
-    if (roundedValue != roundedValue){
-      return <div></div>
-    }
-
     let barWidth = {width: roundedValue * this.props.size + 'px', backgroundColor: this.props.getColor(roundedValue)};
     let labelPosition ={left: roundedValue * this.props.size + 'px', backgroundColor: this.props.getColor(roundedValue)};
 

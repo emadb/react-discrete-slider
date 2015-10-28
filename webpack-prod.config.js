@@ -5,7 +5,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry: [
       path.resolve(__dirname, 'src/components/App.jsx'),
-      './src/index.html'
+      './src/Bar.jsx'
     ],
     plugins: [
       new ExtractTextPlugin('app.css', {allChunks: true}),

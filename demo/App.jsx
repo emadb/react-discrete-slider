@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Bar from './Bar'
+import Bar from '../src/components/Bar'
 
-require('../sass/style.scss');
+require('../src/sass/style.scss');
 
 
 let Colors = {
