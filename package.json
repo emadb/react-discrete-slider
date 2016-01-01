@@ -1,6 +1,7 @@
 {
   "name": "react-discrete-slider",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "main": "dist/bar.js",
   "description": "A simple slider made with React",
   "scripts": {
     "dev": "webpack-dev-server --hot --inline --devtool eval-source --progress --colors",
