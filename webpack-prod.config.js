@@ -4,15 +4,14 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: [
-      path.resolve(__dirname, 'src/components/App.jsx'),
-      './src/index.html'
+      path.resolve(__dirname, 'src/components/Bar.jsx'),
     ],
     plugins: [
       new ExtractTextPlugin('app.css', {allChunks: true}),
       new webpack.optimize.UglifyJsPlugin({minimize: true})
     ],
     output: {
-        filename: '/js/app.js',
+        filename: 'bar.js',
         path: __dirname + "/dist"
     },
     resolve: {
