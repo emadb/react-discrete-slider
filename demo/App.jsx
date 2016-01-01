@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Bar from './Bar'
+import Bar from '../src/components/Bar'
 
-require('../sass/style.scss');
-
+require('../src/sass/style.scss');
 
 let Colors = {
   get: function(value){
@@ -11,7 +10,7 @@ let Colors = {
   }
 };
 
-export default class App extends React.Component{
+class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {value: 5 };

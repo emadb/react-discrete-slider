@@ -31,8 +31,8 @@ export default class Bar extends React.Component{
     let buttons;
     if (this.props.buttons){
       buttons = <div className="bar-buttons">
-          <button className="fa fa-plus-circle" onClick={this.increaseValue}></button>
-          <button className="fa fa-minus-circle" onClick={this.decreaseValue}></button>
+          <button onClick={this.increaseValue}>+</button>
+          <button onClick={this.decreaseValue}>-</button>
         </div>;
     }
 

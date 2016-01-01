@@ -4,12 +4,12 @@ module.exports = {
     entry: [
       'webpack-dev-server/client?http://localhost:8080',
       'webpack/hot/dev-server',
-      path.resolve(__dirname, 'src/components/App.jsx'),
-      './src/index.html'
+      path.resolve(__dirname, 'demo/App.jsx'),
+      './demo/index.html'
     ],
     output: {
-        filename: '/js/app.js',
-        path: __dirname + "/dist"
+        filename: 'app.js',
+        path: __dirname + "/demo"
     },
     resolve: {
       extensions: ['', '.js', '.jsx'],
@@ -28,7 +28,7 @@ module.exports = {
       },{
         test: /\.jsx?$/,
         loaders: ['react-hot', 'babel'],
-        include: path.join(__dirname, 'src')
+        exclude: /node_modules/
       },{
         test: /\.js$/,
         loader: "eslint-loader",
