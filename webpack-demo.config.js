@@ -3,19 +3,17 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: [
-      path.resolve(__dirname, 'demo/App.jsx'),
-    ],
+    entry: [path.resolve(__dirname, 'demo/App.jsx')],
     plugins: [
       new ExtractTextPlugin('app.css', {allChunks: true}),
       new webpack.optimize.UglifyJsPlugin({minimize: true})
     ],
     output: {
-        filename: 'app.js',
+        filename: 'demo.js',
         path: __dirname + "/demo"
     },
     resolve: {
-      extensions: ['.js', '.jsx'],
+      extensions: ['', '.js', '.jsx'],
     },
     module: {
       loaders: [{
@@ -23,7 +21,8 @@ module.exports = {
         loaders: ["file?name=[name].[ext]"],
       },{
         test: /\.jsx?$/,
-        loaders: ['babel']
+        loaders: ['babel'],
+        exclude: ['node_modules']
       },{
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('style', 'css!sass')
