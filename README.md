@@ -20,7 +20,7 @@ Properties and configuration
 
 - `value` (number): value to be shown
 - `showLabel` (bool): true if you want to view the  labels
-- *buttons (bool)*: true if you want to use the buttons
+- `buttons` (bool): true if you want to use the buttons
 - `getColor` (function): function to get the color. The function receive the current value so that the bar color can change based on value
 - `size` (number): number of steps
 - `step` (number): size of step for dividing the bar
