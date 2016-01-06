@@ -4,8 +4,9 @@
   "main": "dist/bar.js",
   "description": "A simple slider made with React",
   "scripts": {
-    "dev": "webpack-dev-server --hot --inline --devtool eval-source --progress --colors",
-    "build": "webpack --config webpack-prod.config.js  --progress --profile --colors"
+    "dev": "webpack-dev-server --hot --inline --devtool eval-source --progress",
+    "build": "webpack --config webpack-prod.config.js  --progress --profile",
+    "demo": "webpack --config webpack-demo.config.js  --progress --profile"
   },
   "repository": {
     "type": "git",
