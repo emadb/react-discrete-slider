@@ -1,6 +1,6 @@
 {
   "name": "react-discrete-slider",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/bar.js",
   "description": "A simple slider made with React",
   "scripts": {
