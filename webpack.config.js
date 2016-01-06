@@ -19,7 +19,7 @@ module.exports = {
         {
           test: /\.jsx?$/,
           loaders: ['eslint'],
-          include:  path.resolve(__dirname, 'src')
+          include:  path.resolve(__dirname, 'src/components')
         }
       ],
       loaders: [{
@@ -27,7 +27,7 @@ module.exports = {
         loaders: ['file?name=[name].[ext]'],
       },{
         test: /\.jsx?$/,
-        loaders: ['react-hot', 'babel'],
+        loaders: ['react-hot', 'babel', 'eslint'],
         exclude: /node_modules/
       },{
         test: /\.js$/,
